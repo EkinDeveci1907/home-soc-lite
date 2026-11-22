@@ -1,0 +1,91 @@
+# SYNTHETIC / MOCK test fixture, written by hand for tests/test_rules.py
+# --- R1 brute force ---
+# 192.0.2.1: 4 failures in 90 s -> no alert (one short)
+2026-11-20T10:00:00-04:00 srv sshd[101]: Failed password for root from 192.0.2.1 port 40001 ssh2
+2026-11-20T10:00:30-04:00 srv sshd[102]: Failed password for root from 192.0.2.1 port 40002 ssh2
+2026-11-20T10:01:00-04:00 srv sshd[103]: Failed password for root from 192.0.2.1 port 40003 ssh2
+2026-11-20T10:01:30-04:00 srv sshd[104]: Failed password for root from 192.0.2.1 port 40004 ssh2
+# 192.0.2.2: 5 failures, first to last exactly 5:00 -> alert
+2026-11-20T10:00:00-04:00 srv sshd[111]: Failed password for root from 192.0.2.2 port 40011 ssh2
+2026-11-20T10:01:00-04:00 srv sshd[112]: Failed password for root from 192.0.2.2 port 40012 ssh2
+2026-11-20T10:02:00-04:00 srv sshd[113]: Failed password for root from 192.0.2.2 port 40013 ssh2
+2026-11-20T10:03:00-04:00 srv sshd[114]: Failed password for root from 192.0.2.2 port 40014 ssh2
+2026-11-20T10:05:00-04:00 srv sshd[115]: Failed password for root from 192.0.2.2 port 40015 ssh2
+# 192.0.2.3: 5 failures, first to last 5:01 -> no alert
+2026-11-20T10:00:00-04:00 srv sshd[121]: Failed password for root from 192.0.2.3 port 40021 ssh2
+2026-11-20T10:01:00-04:00 srv sshd[122]: Failed password for root from 192.0.2.3 port 40022 ssh2
+2026-11-20T10:02:00-04:00 srv sshd[123]: Failed password for root from 192.0.2.3 port 40023 ssh2
+2026-11-20T10:03:00-04:00 srv sshd[124]: Failed password for root from 192.0.2.3 port 40024 ssh2
+2026-11-20T10:05:01-04:00 srv sshd[125]: Failed password for root from 192.0.2.3 port 40025 ssh2
+# 192.0.2.4: 5 failures in 40 s, then the password works -> alert, High
+2026-11-20T11:00:00-04:00 srv sshd[131]: Failed password for dbadmin from 192.0.2.4 port 40031 ssh2
+2026-11-20T11:00:10-04:00 srv sshd[132]: Failed password for dbadmin from 192.0.2.4 port 40032 ssh2
+2026-11-20T11:00:20-04:00 srv sshd[133]: Failed password for dbadmin from 192.0.2.4 port 40033 ssh2
+2026-11-20T11:00:30-04:00 srv sshd[134]: Failed password for dbadmin from 192.0.2.4 port 40034 ssh2
+2026-11-20T11:00:40-04:00 srv sshd[135]: Failed password for dbadmin from 192.0.2.4 port 40035 ssh2
+2026-11-20T11:01:00-04:00 srv sshd[136]: Accepted password for dbadmin from 192.0.2.4 port 40036 ssh2
+# 192.0.2.5: two bursts 2 hours apart -> 2 alerts
+2026-11-20T12:00:00-04:00 srv sshd[141]: Failed password for oracle from 192.0.2.5 port 40041 ssh2
+2026-11-20T12:00:10-04:00 srv sshd[142]: Failed password for oracle from 192.0.2.5 port 40042 ssh2
+2026-11-20T12:00:20-04:00 srv sshd[143]: Failed password for oracle from 192.0.2.5 port 40043 ssh2
+2026-11-20T12:00:30-04:00 srv sshd[144]: Failed password for oracle from 192.0.2.5 port 40044 ssh2
+2026-11-20T12:00:40-04:00 srv sshd[145]: Failed password for oracle from 192.0.2.5 port 40045 ssh2
+2026-11-20T14:00:00-04:00 srv sshd[146]: Failed password for oracle from 192.0.2.5 port 40046 ssh2
+2026-11-20T14:00:10-04:00 srv sshd[147]: Failed password for oracle from 192.0.2.5 port 40047 ssh2
+2026-11-20T14:00:20-04:00 srv sshd[148]: Failed password for oracle from 192.0.2.5 port 40048 ssh2
+2026-11-20T14:00:30-04:00 srv sshd[149]: Failed password for oracle from 192.0.2.5 port 40049 ssh2
+2026-11-20T14:00:40-04:00 srv sshd[150]: Failed password for oracle from 192.0.2.5 port 40050 ssh2
+# 192.0.2.6: two bursts 30 minutes apart -> grouped into 1 alert
+2026-11-20T12:00:00-04:00 srv sshd[151]: Failed password for pi from 192.0.2.6 port 40051 ssh2
+2026-11-20T12:00:10-04:00 srv sshd[152]: Failed password for pi from 192.0.2.6 port 40052 ssh2
+2026-11-20T12:00:20-04:00 srv sshd[153]: Failed password for pi from 192.0.2.6 port 40053 ssh2
+2026-11-20T12:00:30-04:00 srv sshd[154]: Failed password for pi from 192.0.2.6 port 40054 ssh2
+2026-11-20T12:00:40-04:00 srv sshd[155]: Failed password for pi from 192.0.2.6 port 40055 ssh2
+2026-11-20T12:30:00-04:00 srv sshd[156]: Failed password for pi from 192.0.2.6 port 40056 ssh2
+2026-11-20T12:30:10-04:00 srv sshd[157]: Failed password for pi from 192.0.2.6 port 40057 ssh2
+2026-11-20T12:30:20-04:00 srv sshd[158]: Failed password for pi from 192.0.2.6 port 40058 ssh2
+2026-11-20T12:30:30-04:00 srv sshd[159]: Failed password for pi from 192.0.2.6 port 40059 ssh2
+2026-11-20T12:30:40-04:00 srv sshd[160]: Failed password for pi from 192.0.2.6 port 40060 ssh2
+# --- R2 password spraying ---
+# 198.51.100.1: 8 different users, one every 3 min -> alert (and not brute force)
+2026-11-20T13:00:00-04:00 srv sshd[201]: Invalid user u1 from 198.51.100.1 port 41001
+2026-11-20T13:00:00-04:00 srv sshd[201]: Failed password for invalid user u1 from 198.51.100.1 port 41001 ssh2
+2026-11-20T13:03:00-04:00 srv sshd[202]: Failed password for invalid user u2 from 198.51.100.1 port 41002 ssh2
+2026-11-20T13:06:00-04:00 srv sshd[203]: Failed password for invalid user u3 from 198.51.100.1 port 41003 ssh2
+2026-11-20T13:09:00-04:00 srv sshd[204]: Failed password for invalid user u4 from 198.51.100.1 port 41004 ssh2
+2026-11-20T13:12:00-04:00 srv sshd[205]: Failed password for invalid user u5 from 198.51.100.1 port 41005 ssh2
+2026-11-20T13:15:00-04:00 srv sshd[206]: Failed password for invalid user u6 from 198.51.100.1 port 41006 ssh2
+2026-11-20T13:18:00-04:00 srv sshd[207]: Failed password for invalid user u7 from 198.51.100.1 port 41007 ssh2
+2026-11-20T13:21:00-04:00 srv sshd[208]: Failed password for invalid user u8 from 198.51.100.1 port 41008 ssh2
+# 198.51.100.2: only 7 different users -> no alert
+2026-11-20T13:00:00-04:00 srv sshd[211]: Failed password for invalid user v1 from 198.51.100.2 port 41011 ssh2
+2026-11-20T13:03:00-04:00 srv sshd[212]: Failed password for invalid user v2 from 198.51.100.2 port 41012 ssh2
+2026-11-20T13:06:00-04:00 srv sshd[213]: Failed password for invalid user v3 from 198.51.100.2 port 41013 ssh2
+2026-11-20T13:09:00-04:00 srv sshd[214]: Failed password for invalid user v4 from 198.51.100.2 port 41014 ssh2
+2026-11-20T13:12:00-04:00 srv sshd[215]: Failed password for invalid user v5 from 198.51.100.2 port 41015 ssh2
+2026-11-20T13:15:00-04:00 srv sshd[216]: Failed password for invalid user v6 from 198.51.100.2 port 41016 ssh2
+2026-11-20T13:18:00-04:00 srv sshd[217]: Failed password for invalid user v7 from 198.51.100.2 port 41017 ssh2
+# 198.51.100.3: 8 users but spread over 35 min, so any 30 min holds only 7 -> no alert
+2026-11-20T13:00:00-04:00 srv sshd[221]: Failed password for invalid user w1 from 198.51.100.3 port 41021 ssh2
+2026-11-20T13:05:00-04:00 srv sshd[222]: Failed password for invalid user w2 from 198.51.100.3 port 41022 ssh2
+2026-11-20T13:10:00-04:00 srv sshd[223]: Failed password for invalid user w3 from 198.51.100.3 port 41023 ssh2
+2026-11-20T13:15:00-04:00 srv sshd[224]: Failed password for invalid user w4 from 198.51.100.3 port 41024 ssh2
+2026-11-20T13:20:00-04:00 srv sshd[225]: Failed password for invalid user w5 from 198.51.100.3 port 41025 ssh2
+2026-11-20T13:25:00-04:00 srv sshd[226]: Failed password for invalid user w6 from 198.51.100.3 port 41026 ssh2
+2026-11-20T13:30:00-04:00 srv sshd[227]: Failed password for invalid user w7 from 198.51.100.3 port 41027 ssh2
+2026-11-20T13:35:00-04:00 srv sshd[228]: Failed password for invalid user w8 from 198.51.100.3 port 41028 ssh2
+# --- R3 off-hours admin login ---
+# a failed admin login at 06:58 -> no alert (only successful logins count)
+2026-11-20T06:58:00-04:00 srv sshd[301]: Failed password for admin from 10.0.0.5 port 42001 ssh2
+# admin at 06:59:59 -> alert (Medium, internal IP)
+2026-11-20T06:59:59-04:00 srv sshd[302]: Accepted password for admin from 10.0.0.5 port 42002 ssh2
+# admin at 07:00:00 -> no alert
+2026-11-20T07:00:00-04:00 srv sshd[303]: Accepted password for admin from 10.0.0.5 port 42003 ssh2
+# root at 18:59:59 -> no alert
+2026-11-20T18:59:59-04:00 srv sshd[304]: Accepted publickey for root from 10.0.0.5 port 42004 ssh2
+# root at 19:00:00 from an outside IP -> alert, High
+2026-11-20T19:00:00-04:00 srv sshd[305]: Accepted publickey for root from 203.0.113.9 port 42005 ssh2
+# bob is not an admin -> no alert at 03:00
+2026-11-20T03:00:00-04:00 srv sshd[306]: Accepted publickey for bob from 10.0.0.7 port 42006 ssh2
+# a sudo failure counts as one failed login from "local"
+2026-11-20T09:00:00-04:00 srv sudo:    alice : 3 incorrect password attempts ; TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/bin/ls

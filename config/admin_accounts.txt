@@ -1,0 +1,6 @@
+# Accounts the off-hours rule (R3) treats as admin. One name per line.
+# These match the fictional server in the SYNTHETIC sample logs.
+root
+admin
+administrator
+svc_backup

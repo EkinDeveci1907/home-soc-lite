@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tab icon: a shield in the page's indigo, inline so there's no extra request -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%234f46e5'/><path d='M8 3l4 1.5v3c0 2.6-1.8 4.4-4 5.2-2.2-.8-4-2.6-4-5.2v-3z' fill='white'/></svg>">
+  <title>Home SOC Lite</title>
+  <!-- Same pattern as the PQC Monitor: plain HTML, our own style.css and app.js,
+       and Chart.js from a CDN pinned with an integrity hash, so the browser refuses
+       anything that isn't the exact file we tested against. If the CDN can't be
+       reached (no internet), the numbers and the alert table still work; only the
+       two charts go missing. app.js loads last because it uses Chart. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+          integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+
+    <header class="header">
+      <div>
+        <h1>Home SOC Lite</h1>
+        <p class="tagline">Log ingestion, SQL detection rules and alert triage, on one laptop</p>
+      </div>
+      <div class="date">Logs covered<span id="span">...</span></div>
+    </header>
+
+    <p id="synthetic" class="banner" hidden>SYNTHETIC / MOCK DATA: made-up logs for a fictional server.
+       Not real traffic, systems or people.</p>
+
+    <p id="headline" class="headline"></p>
+
+    <section class="summary">
+      <div class="box"><div class="num" id="s-events">...</div><div class="label">events ingested</div></div>
+      <div class="box"><div class="num" id="s-alerts">...</div><div class="label">alerts</div></div>
+      <div class="box"><div class="num" id="s-high">...</div><div class="label">high severity</div></div>
+      <div class="box"><div class="num" id="s-ips">...</div><div class="label">source IPs flagged</div></div>
+    </section>
+
+    <section class="charts">
+      <div class="card">
+        <h2>Alerts by rule</h2>
+        <canvas id="ruleChart" height="220"></canvas>
+      </div>
+      <div class="card">
+        <h2>Events over time <span class="hint">30-minute buckets, hover for alerts</span></h2>
+        <canvas id="timeChart" height="220"></canvas>
+      </div>
+    </section>
+    <p id="no-charts" class="scope" hidden>The charts need Chart.js from the internet, which didn't load. Everything else on the page still works.</p>
+
+    <section class="card">
+      <h2>Alerts</h2>
+      <div class="filters">
+        <label>Rule <select id="ruleFilter"></select></label>
+        <label>Severity <select id="severityFilter"></select></label>
+        <span class="hint">Click an alert to see its log lines and what to do next.</span>
+      </div>
+      <table class="alerts">
+        <thead>
+          <tr><th>ID</th><th>Severity</th><th>Rule</th><th>Source IP</th><th>User</th><th>First seen</th><th>What happened</th></tr>
+        </thead>
+        <tbody id="alertRows"></tbody>
+      </table>
+      <div id="detail" class="detail" hidden></div>
+    </section>
+
+    <section class="card">
+      <h2>Detection rules</h2>
+      <p>Each rule is one SQL query over the events table: KQL-style queries translated to SQL.
+         This is not Microsoft Sentinel; it runs on SQLite.</p>
+      <div id="ruleList"></div>
+    </section>
+
+    <footer class="footer">
+      Home SOC Lite · Python, SQLite, FastAPI ·
+      <a href="https://github.com/EkinDeveci1907/home-soc-lite">source on GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>

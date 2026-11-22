@@ -1,0 +1,147 @@
+# SYNTHETIC / MOCK DATA - made by make_sample_logs.py. Not real systems, people or traffic. IPs are from documentation and private ranges.
+2026-11-20T01:50:00-04:00 web01 sshd[2047]: Failed password for svc_backup from 198.51.100.77 port 54265 ssh2
+2026-11-20T01:50:25-04:00 web01 sshd[8821]: Failed password for svc_backup from 198.51.100.77 port 64010 ssh2
+2026-11-20T01:50:50-04:00 web01 sshd[4612]: Failed password for svc_backup from 198.51.100.77 port 46105 ssh2
+2026-11-20T01:51:15-04:00 web01 sshd[5334]: Failed password for svc_backup from 198.51.100.77 port 54913 ssh2
+2026-11-20T01:51:40-04:00 web01 sshd[7391]: Failed password for svc_backup from 198.51.100.77 port 55481 ssh2
+2026-11-20T01:52:05-04:00 web01 sshd[7878]: Failed password for svc_backup from 198.51.100.77 port 51079 ssh2
+2026-11-20T01:52:30-04:00 web01 sshd[8202]: Failed password for svc_backup from 198.51.100.77 port 57521 ssh2
+2026-11-20T01:52:55-04:00 web01 sshd[3351]: Failed password for svc_backup from 198.51.100.77 port 30328 ssh2
+2026-11-20T01:53:20-04:00 web01 sshd[4705]: Failed password for svc_backup from 198.51.100.77 port 55481 ssh2
+2026-11-20T01:55:40-04:00 web01 sshd[7281]: Accepted password for svc_backup from 198.51.100.77 port 49105 ssh2
+2026-11-20T02:00:31-04:00 web01 sshd[2435]: Accepted publickey for jsmith from 10.0.1.11 port 42873 ssh2
+2026-11-20T02:10:05-04:00 web01 sshd[6175]: Failed password for root from 203.0.113.45 port 31125 ssh2
+2026-11-20T02:10:20-04:00 web01 sshd[7058]: Failed password for root from 203.0.113.45 port 37991 ssh2
+2026-11-20T02:10:35-04:00 web01 sshd[8386]: Failed password for root from 203.0.113.45 port 43012 ssh2
+2026-11-20T02:10:50-04:00 web01 sshd[2062]: Failed password for root from 203.0.113.45 port 51434 ssh2
+2026-11-20T02:11:05-04:00 web01 sshd[7735]: Failed password for root from 203.0.113.45 port 50979 ssh2
+2026-11-20T02:11:20-04:00 web01 sshd[2578]: Failed password for root from 203.0.113.45 port 37680 ssh2
+2026-11-20T02:11:35-04:00 web01 sshd[4583]: Failed password for root from 203.0.113.45 port 45080 ssh2
+2026-11-20T02:11:50-04:00 web01 sshd[6688]: Failed password for root from 203.0.113.45 port 45104 ssh2
+2026-11-20T02:12:05-04:00 web01 sshd[4348]: Failed password for root from 203.0.113.45 port 42442 ssh2
+2026-11-20T02:12:20-04:00 web01 sshd[3741]: Failed password for root from 203.0.113.45 port 60813 ssh2
+2026-11-20T02:12:35-04:00 web01 sshd[2323]: Failed password for root from 203.0.113.45 port 55690 ssh2
+2026-11-20T02:12:50-04:00 web01 sshd[4468]: Failed password for root from 203.0.113.45 port 54310 ssh2
+2026-11-20T03:00:00-04:00 web01 sshd[6576]: Failed password for admin from 203.0.113.99 port 32062 ssh2
+2026-11-20T03:01:40-04:00 web01 sshd[4552]: Invalid user test from 203.0.113.99 port 52886
+2026-11-20T03:01:40-04:00 web01 sshd[4552]: Failed password for invalid user test from 203.0.113.99 port 52886 ssh2
+2026-11-20T03:03:20-04:00 web01 sshd[5950]: Invalid user guest from 203.0.113.99 port 43816
+2026-11-20T03:03:20-04:00 web01 sshd[5950]: Failed password for invalid user guest from 203.0.113.99 port 43816 ssh2
+2026-11-20T03:05:00-04:00 web01 sshd[7906]: Invalid user oracle from 203.0.113.99 port 32787
+2026-11-20T03:05:00-04:00 web01 sshd[7906]: Failed password for invalid user oracle from 203.0.113.99 port 32787 ssh2
+2026-11-20T03:06:40-04:00 web01 sshd[6937]: Invalid user postgres from 203.0.113.99 port 55316
+2026-11-20T03:06:40-04:00 web01 sshd[6937]: Failed password for invalid user postgres from 203.0.113.99 port 55316 ssh2
+2026-11-20T03:08:20-04:00 web01 sshd[4349]: Invalid user ubuntu from 203.0.113.99 port 33229
+2026-11-20T03:08:20-04:00 web01 sshd[4349]: Failed password for invalid user ubuntu from 203.0.113.99 port 33229 ssh2
+2026-11-20T03:10:00-04:00 web01 sshd[5275]: Invalid user user from 203.0.113.99 port 34584
+2026-11-20T03:10:00-04:00 web01 sshd[5275]: Failed password for invalid user user from 203.0.113.99 port 34584 ssh2
+2026-11-20T03:11:40-04:00 web01 sshd[8353]: Invalid user support from 203.0.113.99 port 64066
+2026-11-20T03:11:40-04:00 web01 sshd[8353]: Failed password for invalid user support from 203.0.113.99 port 64066 ssh2
+2026-11-20T03:13:20-04:00 web01 sshd[5948]: Invalid user backup from 203.0.113.99 port 55994
+2026-11-20T03:13:20-04:00 web01 sshd[5948]: Failed password for invalid user backup from 203.0.113.99 port 55994 ssh2
+2026-11-20T03:15:00-04:00 web01 sshd[7078]: Invalid user ftp from 203.0.113.99 port 61391
+2026-11-20T03:15:00-04:00 web01 sshd[7078]: Failed password for invalid user ftp from 203.0.113.99 port 61391 ssh2
+2026-11-20T03:16:40-04:00 web01 sshd[8086]: Invalid user mysql from 203.0.113.99 port 44890
+2026-11-20T03:16:40-04:00 web01 sshd[8086]: Failed password for invalid user mysql from 203.0.113.99 port 44890 ssh2
+2026-11-20T03:18:20-04:00 web01 sshd[6312]: Invalid user deploy from 203.0.113.99 port 63358
+2026-11-20T03:18:20-04:00 web01 sshd[6312]: Failed password for invalid user deploy from 203.0.113.99 port 63358 ssh2
+2026-11-20T05:40:22-04:00 web01 sshd[2777]: Accepted password for admin from 10.0.0.15 port 49690 ssh2
+2026-11-20T07:00:00-04:00 web01 sshd[4202]: Accepted password for admin from 10.0.0.15 port 64164 ssh2
+2026-11-20T08:13:58-04:00 web01 sshd[7405]: Accepted password for kmurphy from 10.0.1.16 port 49624 ssh2
+2026-11-20T08:44:31-04:00 web01 sshd[3770]: Accepted password for dsingh from 10.0.1.19 port 46078 ssh2
+2026-11-20T08:56:28-04:00 web01 sshd[2260]: Failed password for kmurphy from 10.0.1.16 port 53817 ssh2
+2026-11-20T08:57:03-04:00 web01 sshd[3784]: Accepted publickey for kmurphy from 10.0.1.16 port 40884 ssh2
+2026-11-20T09:15:12-04:00 web01 sshd[6785]: Accepted password for admin from 10.0.0.15 port 40749 ssh2
+2026-11-20T09:16:40-04:00 web01 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt update
+2026-11-20T09:49:39-04:00 web01 sshd[5235]: Accepted password for sali from 10.0.1.17 port 59258 ssh2
+2026-11-20T10:45:03-04:00 web01 sshd[2287]: Accepted publickey for root from 10.0.0.8 port 63118 ssh2
+2026-11-20T10:50:26-04:00 web01 sshd[2532]: Accepted publickey for hsilva from 10.0.1.22 port 39581 ssh2
+2026-11-20T11:05:00-04:00 web01 sshd[7813]: Invalid user ubuntu from 192.0.2.10 port 56803
+2026-11-20T11:05:00-04:00 web01 sshd[7813]: Failed password for invalid user ubuntu from 192.0.2.10 port 56803 ssh2
+2026-11-20T11:05:20-04:00 web01 sshd[6854]: Invalid user ubuntu from 192.0.2.10 port 59444
+2026-11-20T11:05:20-04:00 web01 sshd[6854]: Failed password for invalid user ubuntu from 192.0.2.10 port 59444 ssh2
+2026-11-20T11:05:40-04:00 web01 sshd[7636]: Invalid user ubuntu from 192.0.2.10 port 41850
+2026-11-20T11:05:40-04:00 web01 sshd[7636]: Failed password for invalid user ubuntu from 192.0.2.10 port 41850 ssh2
+2026-11-20T11:06:00-04:00 web01 sshd[5116]: Invalid user ubuntu from 192.0.2.10 port 46780
+2026-11-20T11:06:00-04:00 web01 sshd[5116]: Failed password for invalid user ubuntu from 192.0.2.10 port 46780 ssh2
+2026-11-20T11:06:11-04:00 web01 sshd[3264]: Accepted publickey for lnguyen from 10.0.1.14 port 51563 ssh2
+2026-11-20T11:06:20-04:00 web01 sshd[7163]: Invalid user ubuntu from 192.0.2.10 port 31276
+2026-11-20T11:06:20-04:00 web01 sshd[7163]: Failed password for invalid user ubuntu from 192.0.2.10 port 31276 ssh2
+2026-11-20T11:06:40-04:00 web01 sshd[7531]: Invalid user ubuntu from 192.0.2.10 port 37147
+2026-11-20T11:06:40-04:00 web01 sshd[7531]: Failed password for invalid user ubuntu from 192.0.2.10 port 37147 ssh2
+2026-11-20T11:11:09-04:00 web01 sshd[2480]: Accepted publickey for rroy from 10.0.1.15 port 48019 ssh2
+2026-11-20T11:18:00-04:00 web01 sshd[8970]: Failed password for gfraser from 10.0.1.21 port 49980 ssh2
+2026-11-20T11:18:54-04:00 web01 sshd[3071]: Accepted password for gfraser from 10.0.1.21 port 56675 ssh2
+2026-11-20T11:40:30-04:00 web01 sshd[7415]: Accepted password for ogrant from 10.0.1.25 port 39030 ssh2
+2026-11-20T11:56:52-04:00 web01 sshd[6079]: Accepted publickey for hsilva from 10.0.1.22 port 35355 ssh2
+2026-11-20T12:00:05-04:00 web01 sshd[8906]: Accepted publickey for svc_backup from 10.0.0.20 port 55835 ssh2
+2026-11-20T12:13:23-04:00 web01 sshd[3001]: Accepted password for eokafor from 10.0.1.20 port 35492 ssh2
+2026-11-20T12:15:00-04:00 web01 sshd[7304]: Accepted password for gfraser from 10.0.1.21 port 54863 ssh2
+2026-11-20T12:23:58-04:00 web01 sshd[2434]: Accepted password for kmurphy from 10.0.1.16 port 53353 ssh2
+2026-11-20T12:25:05-04:00 web01 sshd[8364]: Accepted publickey for sali from 10.0.1.17 port 33676 ssh2
+2026-11-20T12:43:49-04:00 web01 sshd[5049]: Failed password for jreid from 10.0.1.24 port 45354 ssh2
+2026-11-20T12:44:22-04:00 web01 sshd[8067]: Accepted publickey for jreid from 10.0.1.24 port 36272 ssh2
+2026-11-20T13:05:33-04:00 web01 sshd[5525]: Accepted password for tclarke from 10.0.1.18 port 49658 ssh2
+2026-11-20T13:08:53-04:00 web01 sshd[3064]: Accepted password for lnguyen from 10.0.1.14 port 31547 ssh2
+2026-11-20T13:25:34-04:00 web01 sshd[6723]: Failed password for apatel from 10.0.1.12 port 56305 ssh2
+2026-11-20T13:26:38-04:00 web01 sshd[4578]: Accepted password for apatel from 10.0.1.12 port 54812 ssh2
+2026-11-20T13:30:40-04:00 web01 sshd[5958]: Accepted password for admin from 10.0.0.15 port 61966 ssh2
+2026-11-20T13:31:02-04:00 web01 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+2026-11-20T13:32:47-04:00 web01 sshd[8613]: Accepted publickey for ogrant from 10.0.1.25 port 47764 ssh2
+2026-11-20T13:47:37-04:00 web01 sshd[3004]: Accepted password for eokafor from 10.0.1.20 port 48606 ssh2
+2026-11-20T13:51:07-04:00 web01 sshd[5698]: Accepted password for jreid from 10.0.1.24 port 59204 ssh2
+2026-11-20T13:55:46-04:00 web01 sshd[2307]: Accepted password for sali from 10.0.1.17 port 36831 ssh2
+2026-11-20T14:00:00-04:00 web01 sshd[5236]: Failed password for root from 203.0.113.200 port 50931 ssh2
+2026-11-20T14:00:45-04:00 web01 sshd[5582]: Failed password for root from 203.0.113.200 port 35372 ssh2
+2026-11-20T14:01:30-04:00 web01 sshd[6473]: Failed password for root from 203.0.113.200 port 52905 ssh2
+2026-11-20T14:02:15-04:00 web01 sshd[2246]: Failed password for root from 203.0.113.200 port 46580 ssh2
+2026-11-20T14:40:54-04:00 web01 sshd[4892]: Accepted publickey for apatel from 10.0.1.12 port 45097 ssh2
+2026-11-20T14:41:18-04:00 web01 sshd[6775]: Accepted publickey for jsmith from 10.0.1.11 port 49587 ssh2
+2026-11-20T14:43:24-04:00 web01 sshd[2319]: Failed password for mchen from 10.0.1.13 port 63844 ssh2
+2026-11-20T14:44:42-04:00 web01 sshd[7433]: Accepted password for mchen from 10.0.1.13 port 36948 ssh2
+2026-11-20T15:10:00-04:00 web01 sshd[4137]: Failed password for admin from 198.51.100.150 port 64204 ssh2
+2026-11-20T15:11:30-04:00 web01 sshd[6742]: Failed password for admin from 198.51.100.150 port 64905 ssh2
+2026-11-20T15:13:00-04:00 web01 sshd[3643]: Failed password for admin from 198.51.100.150 port 37099 ssh2
+2026-11-20T15:14:30-04:00 web01 sshd[6515]: Failed password for admin from 198.51.100.150 port 53008 ssh2
+2026-11-20T15:16:01-04:00 web01 sshd[7907]: Failed password for admin from 198.51.100.150 port 35912 ssh2
+2026-11-20T15:29:40-04:00 web01 sshd[7741]: Failed password for tclarke from 10.0.1.18 port 32256 ssh2
+2026-11-20T15:30:39-04:00 web01 sshd[7163]: Accepted password for tclarke from 10.0.1.18 port 41029 ssh2
+2026-11-20T15:34:47-04:00 web01 sshd[3097]: Failed password for jsmith from 10.0.1.11 port 38274 ssh2
+2026-11-20T15:36:01-04:00 web01 sshd[3782]: Accepted password for jsmith from 10.0.1.11 port 60606 ssh2
+2026-11-20T15:40:00-04:00 web01 sshd[7047]: Failed password for jsmith from 198.51.100.23 port 58933 ssh2
+2026-11-20T15:42:30-04:00 web01 sshd[3792]: Failed password for apatel from 198.51.100.23 port 64960 ssh2
+2026-11-20T15:45:00-04:00 web01 sshd[6460]: Failed password for mchen from 198.51.100.23 port 45529 ssh2
+2026-11-20T15:47:30-04:00 web01 sshd[8480]: Failed password for lnguyen from 198.51.100.23 port 31588 ssh2
+2026-11-20T15:50:00-04:00 web01 sshd[7463]: Failed password for rroy from 198.51.100.23 port 55331 ssh2
+2026-11-20T15:52:30-04:00 web01 sshd[8660]: Failed password for kmurphy from 198.51.100.23 port 57530 ssh2
+2026-11-20T15:55:00-04:00 web01 sshd[6247]: Failed password for sali from 198.51.100.23 port 31552 ssh2
+2026-11-20T15:57:30-04:00 web01 sshd[3229]: Failed password for tclarke from 198.51.100.23 port 40063 ssh2
+2026-11-20T16:00:00-04:00 web01 sshd[7024]: Failed password for dsingh from 198.51.100.23 port 38817 ssh2
+2026-11-20T16:10:16-04:00 web01 sshd[5130]: Accepted password for jreid from 10.0.1.24 port 31493 ssh2
+2026-11-20T16:21:22-04:00 web01 sshd[4234]: Accepted password for mchen from 10.0.1.13 port 56380 ssh2
+2026-11-20T16:43:51-04:00 web01 sshd[4445]: Accepted publickey for ikaya from 10.0.1.23 port 32385 ssh2
+2026-11-20T16:44:01-04:00 web01 sshd[7307]: Failed password for hsilva from 10.0.1.22 port 60158 ssh2
+2026-11-20T16:44:42-04:00 web01 sshd[5528]: Accepted password for hsilva from 10.0.1.22 port 59320 ssh2
+2026-11-20T16:58:21-04:00 web01 sshd[8515]: Accepted password for tclarke from 10.0.1.18 port 52900 ssh2
+2026-11-20T16:59:35-04:00 web01 sshd[5008]: Failed password for mchen from 10.0.1.13 port 32887 ssh2
+2026-11-20T17:00:48-04:00 web01 sshd[8791]: Accepted password for mchen from 10.0.1.13 port 61429 ssh2
+2026-11-20T17:06:01-04:00 web01 sshd[7693]: Accepted password for rroy from 10.0.1.15 port 34860 ssh2
+2026-11-20T17:08:13-04:00 web01 sshd[2208]: Accepted password for dsingh from 10.0.1.19 port 62429 ssh2
+2026-11-20T17:19:38-04:00 web01 sshd[5238]: Accepted publickey for ikaya from 10.0.1.23 port 62094 ssh2
+2026-11-20T17:27:02-04:00 web01 sshd[7827]: Accepted publickey for jsmith from 10.0.1.11 port 39113 ssh2
+2026-11-20T18:59:59-04:00 web01 sshd[5613]: Accepted password for admin from 10.0.0.15 port 39616 ssh2
+2026-11-20T19:00:00-04:00 web01 sshd[7294]: Accepted password for admin from 10.0.0.15 port 48754 ssh2
+2026-11-20T20:10:00-04:00 web01 sshd[5004]: Failed password for admin from 192.0.2.55 port 39536 ssh2
+2026-11-20T20:12:00-04:00 web01 sshd[7263]: Invalid user test from 192.0.2.55 port 62858
+2026-11-20T20:12:00-04:00 web01 sshd[7263]: Failed password for invalid user test from 192.0.2.55 port 62858 ssh2
+2026-11-20T20:14:00-04:00 web01 sshd[2587]: Invalid user guest from 192.0.2.55 port 56135
+2026-11-20T20:14:00-04:00 web01 sshd[2587]: Failed password for invalid user guest from 192.0.2.55 port 56135 ssh2
+2026-11-20T20:16:00-04:00 web01 sshd[6547]: Invalid user oracle from 192.0.2.55 port 48001
+2026-11-20T20:16:00-04:00 web01 sshd[6547]: Failed password for invalid user oracle from 192.0.2.55 port 48001 ssh2
+2026-11-20T20:18:00-04:00 web01 sshd[4018]: Invalid user ftp from 192.0.2.55 port 40444
+2026-11-20T20:18:00-04:00 web01 sshd[4018]: Failed password for invalid user ftp from 192.0.2.55 port 40444 ssh2
+2026-11-20T20:20:00-04:00 web01 sshd[6987]: Invalid user pi from 192.0.2.55 port 38233
+2026-11-20T20:20:00-04:00 web01 sshd[6987]: Failed password for invalid user pi from 192.0.2.55 port 38233 ssh2
+2026-11-20T20:22:00-04:00 web01 sshd[5014]: Invalid user web from 192.0.2.55 port 37224
+2026-11-20T20:22:00-04:00 web01 sshd[5014]: Failed password for invalid user web from 192.0.2.55 port 37224 ssh2
+2026-11-20T23:12:09-04:00 web01 sshd[3919]: Accepted publickey for root from 10.0.0.8 port 37578 ssh2

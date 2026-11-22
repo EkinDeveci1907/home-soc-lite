@@ -1,0 +1,8 @@
+# SYNTHETIC / MOCK test fixture: lines written in the `log show` formats (default and --style syslog)
+Filtering the log data using "process BEGINSWITH "sshd" OR process == "sudo""
+Timestamp                       Thread     Type        Activity             PID    TTL
+2026-11-20 08:15:02.123456-0400 0x2f1c3    Default     0x0                  8812   0    sshd-session: Failed password for invalid user test from 192.168.1.50 port 52314 ssh2
+2026-11-20 08:15:09.004112-0400  localhost sshd-session[8813]: Accepted publickey for ekim from 192.168.1.20 port 50022 ssh2
+2026-11-20 08:20:00.000001-0400 0x1a2b     Default     0x0                  900    0    sudo:     ekim : 1 incorrect password attempt ; TTY=ttys001 ; PWD=/Users/ekim ; USER=root ; COMMAND=/usr/bin/true
+2026-11-20 08:20:30.000001-0400 0x1a2b     Default     0x0                  901    0    sudo:     ekim : TTY=ttys001 ; PWD=/Users/ekim ; USER=root ; COMMAND=/usr/bin/true
+2026-11-20 08:21:00.000001-0400 0x77       Default     0x0                  0      0    kernel: (AppleACPIPlatform) an unrelated message

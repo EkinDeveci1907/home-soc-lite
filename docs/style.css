@@ -1,0 +1,96 @@
+/* Styles for the dashboard. Same plain look as the PQC Monitor, no framework.
+   indigo = suspicious / the thing to look at, slate = normal background. */
+:root {
+  --indigo: #4f46e5;
+  --slate: #94a3b8;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --bg: #f6f7fb;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.page { max-width: 1100px; margin: 0 auto; padding: 32px 24px 64px; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 16px; flex-wrap: wrap;
+  border-bottom: 2px solid var(--indigo);
+  padding-bottom: 16px; margin-bottom: 20px;
+}
+h1 { font-size: 24px; font-weight: 700; }
+.tagline { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.date { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; text-align: right; }
+.date span { color: var(--ink); font-size: 14px; }
+
+/* the red "this is mock data" strip */
+.banner {
+  background: #fef2f2; border: 1px solid #fecaca; color: #991b1b;
+  font-size: 13px; font-weight: 600; border-radius: 8px; padding: 8px 12px; margin-bottom: 16px;
+}
+.headline { font-size: 15px; margin-bottom: 18px; }
+
+/* the four big number cards up top */
+.summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.box { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+.box .num { font-size: 30px; font-weight: 700; color: var(--indigo); }
+.box .label { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+.card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.card h2 { font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+.card p { margin-bottom: 12px; font-size: 14px; max-width: 75ch; }
+.charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.charts .card { margin-bottom: 0; }
+canvas { max-width: 100%; }
+.hint { color: var(--muted); font-size: 12px; font-weight: 400; }
+.scope { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+
+/* alert table */
+.filters { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+.filters select { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font-size: 13px; background: #fff; color: var(--ink); margin-left: 4px; }
+table.alerts { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.alerts th { text-align: left; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); padding: 6px 8px; }
+table.alerts td { border-bottom: 1px solid var(--line); padding: 7px 8px; vertical-align: top; }
+table.alerts tbody tr { cursor: pointer; }
+table.alerts tbody tr:hover { background: #f8fafc; }
+table.alerts tbody tr.selected { background: #eef2ff; }
+.mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; white-space: nowrap; }
+
+/* severity badges: always the word, never colour alone */
+.sev { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+.sev-High { background: #fee2e2; color: #991b1b; }
+.sev-Medium { background: #fef3c7; color: #92400e; }
+.sev-Low { background: #f1f5f9; color: #475569; }
+.tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 10px; background: #eef2ff; color: var(--indigo); margin-left: 6px; text-decoration: none; }
+
+/* the panel that opens under the table */
+.detail { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; background: #fafafa; }
+.detail h3 { font-size: 14px; margin-bottom: 6px; }
+.detail p { font-size: 13px; margin-bottom: 8px; }
+.detail .note { color: #991b1b; font-weight: 600; }
+pre.evidence {
+  font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11.5px; line-height: 1.45;
+  background: #0f172a; color: #e2e8f0; border-radius: 8px; padding: 10px 12px;
+  overflow-x: auto; max-height: 260px; white-space: pre;
+}
+
+/* rule list */
+.rule { border-top: 1px solid var(--line); padding: 10px 0; font-size: 14px; }
+.rule summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-top: 4px; }
+.rule pre { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; background: #f1f5f9; border-radius: 8px; padding: 10px 12px; overflow-x: auto; margin-top: 6px; }
+
+.footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
+.footer a { color: var(--indigo); }
+
+@media (max-width: 760px) {
+  .summary { grid-template-columns: 1fr 1fr; }
+  .charts { grid-template-columns: 1fr; }
+}
